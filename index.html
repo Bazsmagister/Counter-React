@@ -42,11 +42,18 @@
             // }
 
             subtract = () => {
-                this.setState({ count: this.state.count - 1 });
+                if (this.state.count > 0) {
+                    this.setState({ count: this.state.count - 1 });
+                } else {
+                    this.state.count = 0;
+                }
+
             }
 
             render() {
                 // return <h1>Hello World!</h1>
+                //React event handlers are written inside curly braces:
+                //onClick = { shoot }  instead of onClick = "shoot()".
                 return (
                     <div>
                         <button className='inc' onClick={this.add}>Increment!</button>
