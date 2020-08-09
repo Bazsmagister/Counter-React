@@ -1,0 +1,7 @@
+  < !-- < script type = "text/jsx" > deprecated-- >
+    < !-- < script type = "text/babel" > -->
+
+      <button className='reset' onClick={this.reset}>Reset</button>
+
+
+                        <h1>Current Count: {this.state.count}</h1>
